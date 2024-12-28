@@ -1,6 +1,6 @@
 import numpy as np
-import pickle as pkl
-from scapy.all import *
+# import pickle as pkl
+# from scapy.all import *
 import argparse
 from manipulator import Manipulator
 
