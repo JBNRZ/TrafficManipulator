@@ -1,7 +1,7 @@
 import pickle as pkl
 import numpy as np
 import argparse
-from utils import *
+from utils import KNnormalizer
 
 if __name__ == "__main__":
 

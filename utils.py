@@ -1,7 +1,16 @@
 import numpy as np
-import math
 import pickle as pkl
-from tkinter import _flatten
+
+
+def _flatten(seq):
+    """Internal function."""
+    res = ()
+    for item in seq:
+        if isinstance(item, (tuple, list)):
+            res = res + _flatten(item)
+        elif item is not None:
+            res = res + (item,)
+    return res
 
 
 def Euclidean_Distance(v1, v2):
