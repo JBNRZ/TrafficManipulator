@@ -74,10 +74,19 @@ See line 31 in `main.py` :
 ## Example —— Case study on Kitsune
 **Kitsune** [NDSS '18] is a state-of-the-art deep learning-based NIDS, more information can be found in this [link](https://github.com/ymirsky/Kitsune-py). In this example, we use Traffic Manipulator to evade Kitsune (i.e., generate mutated malicious traffic which can be classified as benign by Kitsune).
 
+**Please use conda to create a new environment python==3.6**
+```
+conda create -n TrafficManipulator pyhton=3.6
+```
+
 1. Compiling cython file in AfterImage as follows:
    ```
    cd AfterImageExtractor/
    python setup.py build_ext --inplace
+   ```
+   if raise `error: Unable to find vcvarsall.bat`, then run
+   ```
+   conda install libpython
    ```
 2. Training KitNET (learning model in Kitsune) with the training set:
     (Note that you must under `TrafficManipulator/` path, so `cd ..` first)
