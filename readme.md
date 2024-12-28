@@ -76,7 +76,7 @@ See line 31 in `main.py` :
 
 **Please use conda to create a new environment python==3.6**
 ```
-conda create -n TrafficManipulator pyhton=3.6
+conda create -n TrafficManipulator python=3.6
 ```
 
 1. Compiling cython file in AfterImage as follows:
